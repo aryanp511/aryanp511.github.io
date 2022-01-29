@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Code+Pro&display=swap');
+*{
+    padding: 0;
+    margin: 0%;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left{
+    font-size: 30px;
+}
+.navbar{
+    background-color: bisque;
+    font-family: 'Roboto Slab', serif;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+   
+}
+.main{
+ background-color: burlywood;
+ padding: 100px;
+ height: 70vh;
+ margin-top: 50px;
+ max-width: 100%;
+ overflow: hidden;
+ }
+
+ .navbar li{
+     display: inline-block;
+     font-size: 25px;
+     padding: 20px;
+     padding-top: 0px;
+     padding-bottom: 0px;
+     padding-right: 85px;
+     }
+ .nav_list a.active{
+    background-color: gold;
+    color: green;
+ }
+ 
+  .active, .hobby_nav:hover{
+        background-color: gold;
+        color: green;
+ }
+ .active, .skills_nav:hover{
+    background-color: gold;
+    color: green;
+}
+ .navbar ul{
+     padding:0;
+ }
+ .pic img{
+     width: 350px;
+     border-radius: 66px;
+ }
+ .infocontainer{
+    display: flex;
+    justify-content: space-around;
+    width: 93vw;
+ }
+ .heading{
+     font-size: 40px;
+     font-family: 'Roboto Slab', serif;
+ }
+ .about{
+     font-size: 25px;
+   }
+.buttons{
+    margin-top: 35px;
+}
+
+ .buttons button{
+    font-size: 30px;
+    border-radius: 22px;
+    padding: 9px;
+    background-color: grey;
+    margin-right: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 300ms all ease;
+ }
+ .buttons button:hover{
+     background-color: cornsilk;
+ }
+ .hobbies{
+     text-align: center;
+     font-size: 35px;
+     margin-right: 200px;
+     font-family: 'Source Code Pro', monospace;
+    height: 100vh;
+    background-color: honeydew;
+   width: 100%;
+   
+     }
+     .cricket img{
+         width: 100px;
+     }
+     .poetry img{
+         width: 100px;
+     }
+     .volleyball img{
+         width: 100px;
+     }
+     .webseries img{
+         width: 100px;
+     }
+     .hobby {
+         display: flex;
+         justify-content: space-around;
+     }
+     .skills{
+         background-color:rgb(179, 83, 83);
+         height: 100vh;
+        
+     }
+     .html_progress{  
+       width: 512px;
+       height: 20px;
+       display: block;
+       background-color: mistyrose;
+       border-radius: 20px;
+       
+       }
+     
+     .html_progress span{
+         width: 410px;
+         height: 20px;
+         float: left;
+         background-color: rgb(243, 119, 105);
+         
+            
+         border-radius: 20px;
+     }
+     .css_progress{  
+        width: 512px;
+        height: 20px;
+        display: block;
+        background-color: rgb(110, 178, 247);
+        border-radius: 20px;
+        
+        }
+      
+      .css_progress span{
+          width: 257px;
+          height: 20px;
+          float: left;
+          background-color: rgb(0, 128, 255);
+          border-radius: 20px;
+      }
+      .com_progress{  
+        width: 512px;
+        height: 20px;
+        display: block;
+        background-color: rgb(110, 178, 247);
+        border-radius: 20px;
+        
+        }
+      
+      .com_progress span{
+          width: 320px;
+          height: 20px;
+          float: left;
+          background-color: rgb(0, 128, 255);
+          border-radius: 20px;
+      }
+
+       h1{
+         text-align: center;
+         
+     }
+     .htmlprogress{
+         margin-left: 30%;
+         margin-top: 60px;
+     }
+     h3{
+         font-size: 23px;
+     }
+     progress::-webkit-progress-bar {
+        background-color: yellow;
+        border-radius: 7px;
+      }
+      progress::-webkit-progress-value {
+        background-color: blue;
+        border-radius: 7px;
+        box-shadow: 1px 1px 5px 3px rgba( 255, 0, 0, 0.8 );
+      }
