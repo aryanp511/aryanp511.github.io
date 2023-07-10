@@ -1,7 +1,6 @@
 
-
 var header = document.getElementById("myid");
-var btns = header.getElementsByClassName("home");
+var btns = document.getElementsByClassName("home");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
   var current = document.getElementsByClassName("active");
@@ -11,3 +10,12 @@ for (var i = 0; i < btns.length; i++) {
   this.className += " active";
   });
 }
+
+var typed = new Typed(".multiple", {
+  strings: ["Frontend Developer", "Competitive Programmer", 
+  "Future Millionare"],
+  typeSpeed: 70,
+  backSpeed: 70,
+  backDelay: 600,
+  loop: true
+})
