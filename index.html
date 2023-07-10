@@ -1,94 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="javascript.js"></script>
+    <script src="https://kit.fontawesome.com/918798d4ae.js" 
+    crossorigin="anonymous"></script>
 </head>
 <body>
-   <div class="container"> 
-      
-    <div class="navbar">
+    
+<section class="navbar">
           <nav>
               <div class="left">
-                  <b>ARYAN PARMAR</b> 
+                  <b>My Portfolio</b> 
                 </div>
                   <div class="right" id="myid">
                   <ul class="nav_list">  
-                      <a href="#HOME"><li class="home">HOME</li>  </a>
-              <a href="#MYHOBBIES">    <li class="hobby_nav">MY HOBBIES</li> </a>
-                <a href="#SKILLS"> <li class="skills_nav">SKILLS</li> </a>
+                    <a href="index.html" style="--i:1;"><li class="home">HOME</li>  </a>
+                    <a href="#skills" style="--i:2;"><li class="hobby_nav">SKILLS</li></a>
+                    <a href="#contact" style="--i:3;"> <li class="skills_nav">CONTACT</li> </a>
                   </ul>
             </div>
           </nav>
+</section>
+
+<section class="main" id="HOME">
+    <div class="infocontainer">
+        <div class="info">
+            <div class="heading">
+                <h5> Hello, it's me </h5> <br>
+                <h3> Aryan Parmar </h3>
+                <h5>And I'm <span class="multiple"></span></h5>
+            </div> 
+            <div class="about">
+                I live in South Delhi and done my schooling from <br>
+                Ramjas School R.K Puram. Currently, I am  <br>
+                doing B.Tech in MAC from NSUT, Dwarka. 
+            </div>
+            <div class="buttons">
+                <a href="#skills">  <button>Skills</button></a>
+                <a href="#contact"> <button>Contact</button></a>
+            </div>
+        </div>
+        <div class="pic">
+            <img src="robot.png" alt="My Image">
+        </div>        
+    </div>     
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skill">
+    <div class="skill-box">
+        <i class="fa-solid fa-bug"></i>
+        <h4>Frontend Development</h4>
+        <ul>
+        <li><p>Proficient in HTML,CSS & Jacascript.</p></li>
+        <li><p>  I have been using HTML & CSS since Grade 8th. 
+        </p></li>
+        </ul>
     </div>
-  
-        <div class="main" id="HOME">
-            <div class="infocontainer">
-                 <div class="info">
-               <div class="heading">
-                   Hi, My Name is <br>
-                   Aryan Parmar
-               </div> 
-               <div class="about">
-                   I live in South Delhi and done my schooling from <br>
-                   Ramjas School R.K Puram and now I am currently <br>
-                   doing B.Tech in MAC from NSUT, Dwarka. 
-               </div>
-               <div class="buttons">
-                 <a href="#MYHOBBIES">  <button>My Hobbies</button></a>
-                  <a href="#SKILLS"> <button>Skills</button></a>
-               </div>
-              </div>
-             <div class="pic">
-                 <img src="image2.jpeg" alt="My Image"><br><br><br><br><br><br><br><br><br><br><br><br>
-             </div>        
-            </div>     
-        </div>
-          
-        <div class="hobbies" id="MYHOBBIES">
-               <br><br>  <u>  <h1> MY HOBBIES</b> </h1>      </u>  
-              <br> <div class="hobby">    
-               <div class="cricket"><img src="cricket.png" alt="">
-                <br>  <br><b>CRICKET</b>
-            </div>
-                       <div class="poetry"><img src="poetry.jpg" alt="">
-                        <br> <br> <b>POETRY</b>
-                    </div>
-                       <div class="volleyball"><img src="volleyball3.png" alt="">
-                        <br>   <br>  <b>VOLLEYBALL</b>   
-                    </div>
-                       <div class="webseries"><img src="web.png" alt="">
-                        <br>   <br>  <b>WEB SERIES</b>
-                    </div>
-                        </div>
-            </div>
-        <div class="skills" id="SKILLS">
-              <br><br><br><br><br>  <h1>SKILLS</h1>
-             
-              <div class="htmlprogress">
-                  <h3>HTML</h3>
-              <span class="html_progress">
-                  <span></span> </span>
-              </div>
-              <div class="htmlprogress">
-                <h3>CSS</h3>
-            <span class="css_progress">
-                <span></span> </span>
-            </div>
-            <div class="htmlprogress">
-                <h3>Communication Skills</h3>
-            <span class="com_progress">
-                <span></span> </span>
-            </div>
-              
+    <div class="skill-box">
+        <i class="fa-solid fa-code"></i>
+        <h4>Competitive Programming</h4>
+        <ul>
+       <li> <p>Regularly gives contest on coding platforms 
+            like codeforces and codechef. </p></li>
+       <li>    <p> Also solves Striver Sheet for strengthning my DSA.</p></li>
+        </ul>
+    </div>
+    <div class="skill-box">
+        <i class="fa-solid fa-coins"></i>
+         <h4>Stock Market and Trading</h4>
+         <ul>
+         <li> <p> Started investing in stocks since 18. </p></li>
+         <li> <p>It has taught me Money management and risk management. </p></li>
+         </ul>
+    </div>
+    </div>
+</section>
 
+<section id="contact">
+    <div class="details">
+        <h2>Contact Me</h2>
+        <div class="mail">
+            <i class="fa fa-message"></i>
+            <p>aryanparmar346@gmail.com</p>
         </div>
+        <div class="phone">
+            <i class="fa fa-phone"></i>
+            <p>+91-9863825038</p>
+        </div>
+        <div class="icons">
+            <a href="https://www.instagram.com/aryanp511/"><i class="fab fa-instagram">
+            </i></a>
+            <a href="https://www.linkedin.com/in/aryan-parmar-b21a46226/">
+            <i class="fab fa-linkedin">
+            </i></a>
+        </div>
+    </div>
+    <div class="contact-image">
+       <img src="contact2.png" alt="">
+    </div>
+</section>         
 
-   </div>
-         
-      
-  
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
 </body>
 </html>
