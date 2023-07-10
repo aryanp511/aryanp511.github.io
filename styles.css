@@ -3,43 +3,87 @@
 *{
     padding: 0;
     margin: 0%;
+    color: aliceblue;
+    box-sizing: border-box;
+    font-family: "Spartan" , sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.left{
+.left b{
     font-size: 30px;
+    font-weight: 600;
+    margin-left: 70px;
 }
+
+.left{
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+body{
+    background-color: #1f242d;
+}
+
 .navbar{
-    background-color: bisque;
     font-family: 'Roboto Slab', serif;
-    padding: 20px;
-    position: fixed;
+    padding: 20px 0;
+    position: sticky;
     width: 100%;
     top: 0;
-   
+    border-bottom: 1px solid white;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #201e1e
 }
-.main{
- background-color: burlywood;
- padding: 100px;
- height: 70vh;
- margin-top: 50px;
+
+#HOME{
+ padding-top: 80px;
+ height: 88vh;
+ margin-top: 0px;
+ width: 100%;
  max-width: 100%;
  overflow: hidden;
+ display: flex;
+ justify-content: space-between;
+ position: relative;
  }
 
- .navbar li{
+.navbar li{
      display: inline-block;
      font-size: 25px;
-     padding: 20px;
+     padding-left: 20px;
      padding-top: 0px;
      padding-bottom: 0px;
-     padding-right: 85px;
-     color: black;
+     padding-right: 80px;
+     color: white;
+     font-weight: 500;
      }
      
+.navbar a{
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    display: inline-block;
+}
+
+.right{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    margin-top: 10px;
+    width: 48%;
+}
      
 .home{
     width: 1rem;
@@ -49,40 +93,70 @@ nav{
     
 }
 
-    .active, .home:hover{
+.active, .home:hover{
         transition: 300ms all ease;
-        color:orangered;
+        color: #0ef;
  }
 
 
  .active, .hobby_nav:hover{
-        color: orangered;
+        color: #0ef;
         transition: 300ms all ease;
  }
  .active, .skills_nav:hover{
     transition: 300ms all ease;
-    color: orangered;
+    color: #0ef;
 }
  .navbar ul{
      padding:0;
  }
  .pic img{
-     width: 350px;
-     border-radius: 66px;
+    width: 350px;
+    border-radius: 66px;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards,floatImage 4s ease-in-out infinite;
+    animation-delay: 1.7s;
  }
  .infocontainer{
     display: flex;
     justify-content: space-around;
     width: 93vw;
+    height: 100%;
  }
- .heading{
-     font-size: 40px;
-     font-family: 'Roboto Slab', serif;
-     color: rgb(150, 46, 15);
+ .heading h5{
+    font-size: 34px;
+    font-family: 'Roboto Slab', serif;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
  }
- .about{
-     font-size: 25px;
-     margin-top: 20px;
+
+.heading h5:nth-last-of-type(2){
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+ .heading h3{
+    font-size: 40px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-weight: 550;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+ }
+
+.heading span{
+    color: #0ef;
+}
+
+.about{
+    font-size: 25px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
    }
 .buttons{
     margin-top: 35px;
@@ -90,109 +164,228 @@ nav{
 
  .buttons button{
     font-size: 30px;
-    border-radius: 22px;
-    padding: 9px;
-    background-color: rgb(231, 142, 100);
+    border-radius: 13px;
+    padding: 15px;
+    background-color: #201e1e;
     margin-right: 26px;
-    font-weight: bold;
+    font-weight: 300;
     cursor: pointer;
     transition: 300ms all ease;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1.7s;
  }
  .buttons button:hover{
-     background-color: cornsilk;
+     background-color: #0ef;
+     color: #1f242d;
+     font-weight: 300;
+     box-shadow: 0 0 10px #0ef;
  }
- .hobbies{
-     text-align: center;
-     font-size: 35px;
-     margin-right: 200px;
-     font-family: 'Source Code Pro', monospace;
-    height: 100vh;
-    background-color: honeydew;
-   width: 100%;
-   
-     }
-     .cricket img{
-         width: 100px;
-     }
-     .poetry img{
-         width: 100px;
-     }
-     .volleyball img{
-         width: 100px;
-     }
-     .webseries img{
-         width: 100px;
-     }
-     .hobby {
-         display: flex;
-         justify-content: space-around;
-     }
-     .skills{
-         background-color:rgb(179, 83, 83);
-         height: 100vh;
-         color: mistyrose;
-        
-     }
-     .html_progress{  
-       width: 512px;
-       height: 20px;
-       display: block;
-       background-color: mistyrose;
-       border-radius: 20px;
-       
-       }
-     
-     .html_progress span{
-         width: 410px;
-         height: 20px;
-         float: left;
-         background-color: rgb(243, 119, 105);
-         border-radius: 20px;
-     }
-     .css_progress{  
-        width: 512px;
-        height: 20px;
-        display: block;
-        background-color: mistyrose;
-        border-radius: 20px;
-        
-        }
-      
-      .css_progress span{
-          width: 257px;
-          height: 20px;
-          float: left;
-          background-color: rgb(243, 119, 105);
-          border-radius: 20px;
-      }
-      .com_progress{  
-        width: 512px;
-        height: 20px;
-        display: block;
-        background-color: mistyrose;
-        border-radius: 20px;
-        
-        }
-      
-      .com_progress span{
-          width: 320px;
-          height: 20px;
-          float: left;
-    background-color: rgb(243, 119, 105);
-          border-radius: 20px;
-      }
 
-       h1{
-         text-align: center;
-         ;
-         
-     }
-     .htmlprogress{
-         margin-left: 30%;
-         margin-top: 60px;
-     }
-     h3{
-         font-size: 23px;
-         color: mistyrose;
-     }
-  
+#skills{
+    padding-top: 90px;
+}
+
+#skills h2{
+    font-size: 40px;
+    margin-bottom: 80px;
+    margin-left: 64px;
+}
+
+.skill{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.skill-box{
+    background-color: #201e1e;
+    height: 50vh;
+    padding: 20px;
+    margin: 0px 50px 50px 50px;
+    width: 80%;
+    cursor: pointer;
+    border-radius: 20px;
+}
+ 
+.skill-box i{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.skill-box h4{
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.skill-box p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.skill-box ul{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.skill-box:hover i,
+.skill-box:hover h4,
+.skill-box:hover p,
+.skill-box:hover li{
+    color: #201e1e;
+    transition: 500ms ease;
+}
+
+.skill-box:hover{
+    transition: 500ms ease;
+    background-color: #0ef;
+    box-shadow: 0 0 10px #0ef;
+}
+
+.details{
+    margin-top: 40px;
+    margin-left: 10vh;
+}
+
+.details h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+#contact{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.mail{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+    font-size: 20px;
+}
+
+.mail p{
+    padding-left: 10px;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.phone p{
+    padding-left: 10px;
+}
+
+.icons {
+    margin-top: 12vh;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.icons a{
+    padding: 8px 11px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.details i{
+    color: #0ef;
+}
+
+.icons a:hover i{
+    transition: 0.5s ease;
+    color: #201e1e;
+}
+
+.icons a:hover{
+    transition: 0.5s ease;
+    background-color: #0ef;
+    box-shadow: 0 0 10px #0ef;
+}
+
+.contact-image{
+    align-items: center;
+    margin-right: 10vw;
+}
+
+@keyframes slideRight{
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop{
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom{
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft{
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn{
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
