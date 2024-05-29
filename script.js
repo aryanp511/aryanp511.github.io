@@ -13,7 +13,7 @@ for (var i = 0; i < btns.length; i++) {
 
 var typed = new Typed(".multiple", {
   strings: ["Frontend Developer", "Competitive Programmer", 
-  "Future Millionare"],
+  "Stock Enthusiast"],
   typeSpeed: 70,
   backSpeed: 70,
   backDelay: 600,
